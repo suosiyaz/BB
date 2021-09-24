@@ -3,4 +3,5 @@ bin
 appsettings.json 
 *.db
 *.log
+*.rdb
    
