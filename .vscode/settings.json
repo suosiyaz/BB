@@ -1,0 +1,33 @@
+{
+    "deploy": {
+        "packages": [
+            {
+                "name": "Version 1.0.0",
+                "description": "Package version 1.0.0",
+
+                "files": [
+                    "publish/**"
+                ]
+            }
+        ],
+
+        "targets": [
+            {
+                "type": "sftp",
+                "name": "Linux",
+                "description": "SFTP folder",
+
+                "host": "206.189.132.227", "port": 22,
+                "user": "root", "password": "Muharram10@1416Friday",
+
+                "dir": "/var/bb",
+                "mappings": [
+                    {
+                        "source": "publish",
+                        "target": ""
+                    }
+                ]
+            }
+        ]
+    }
+}
